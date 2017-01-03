@@ -1,88 +1,38 @@
 {
     "scope": "source.nut",
     "completions": [
-      /*Server Functions*/
-            /*Event Functions*/
-            { "trigger": "triggerClientEvent","contents":"triggerClientEvent(${1:playerid}, ${2:string event[]}, ${3:...})"},
-            /*"Server Functions"*/
-            { "trigger": "shutdown","contents":"shutdown()"},
-            { "trigger": "setGameModeText","contents":"setGameModeText(${1:string[]})"},
-            /*"Control Functions"*/
-            { "trigger": "kickPlayer","contents":"kick(${1:playerid})"},
-            { "trigger": "banPlayer","contents":"banPlayer(${1:playerid})"},
-            { "trigger": "unBanSerial","contents":"unbanSerial(${1:string serial[]})"},
-            { "trigger": "isSerialBanned","contents":"isSerialBanned(${1:string serial[]})"},
-            { "trigger": "banSerial","contents":"banSerial(${1:string serial[]}, ${2:bannerid}, ${3:seconds}, ${4:string reason[]})"},
-            /*Game Functions*/
-            { "trigger": "setSummer","contents":"setSummer(${1:bool trigger = false})"},
-            /*"Player Functions*/
-            { "trigger": "respawnPlayer","contents":"respawnPlayer(${1:playerid})"},
-            { "trigger": "getPlayerSerial","contents":"getPlayerSerial(${1:playerid})"},
-            { "trigger": "getPlayerNetworkStats","contents":"getPlayerNetworkStats(${1:playerid})"},
-            { "trigger": "removePlayerFromVehicle","contents":"removePlayerFromVehicle(${1:playerid})"},
-            { "trigger": "setPlayerHealth","contents":"setPlayerHealth(${1:playeridn, ${2:Float:health})"},
-            { "trigger": "setPlayerModel","contents":"setPlayerModel(${1:playerid}, ${2:string model[]})"},
-            { "trigger": "sendPlayerMessageToAll","contents":"sendPlayerMessageToAll(${1:string message[]})"},
-            { "trigger": "togglePlayerHud","contents":"togglePlayerHud(${1:playerid}, ${2:bool hud = false})"},
-            { "trigger": "givePlayerWeapon","contents":"givePlayerWeapon(${1:playerid}, ${2:weaponid}, ${3:ammo})"},
-            { "trigger": "setPlayerHandModel","contents":"setPlayerHandModel(${1:playerid}, ${2:hand}, ${3:model})"},
-            { "trigger": "sendPlayerMessage","contents":"sendPlayerMessage(${1:playerid}, ${2:string ${3:message[]})"},
-            { "trigger": "removePlayerWeapon","contents":"removePlayerWeapon(${1:playerid}, ${2:weaponid}, ${3:ammo})"},
-            { "trigger": "putPlayerInVehicle","contents":"putPlayerInVehicle(${1:playerid}, ${2:vehicleid}, ${3:seat})"},
-            { "trigger": "setPlayerPosition","contents":"setPlayerPosition(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})"},
-            { "trigger": "setPlayerRotation","contents":"setPlayerRotation(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})"},
-            { "trigger": "setPlayerAnimStyle","contents":"setPlayerAnimStyle(${1:playerid}, ${2:string directory[]}, ${3:string animStyle[]})"},
-            /*HTTP Functions*/
-            { "trigger": "webRequest","contents":"webRequest(${1:type}, ${2:string url[]}, ${3:string post[]}, ${4:function callback}, ${5:port = 80})"},
-
-
-        //Vehicle Functions - General
-            { "trigger": "createVehicle","contents":"createVehicle(${1:model}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz})"},
-            { "trigger": "destroyVehicle","contents":"destroyVehicle(${1:vehicleid})"},
-            { "trigger": "setVehiclePosition","contents":"setVehiclePosition(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})"},
-            { "trigger": "getVehiclePosition","contents":"getVehiclePosition(${1:vehicleid})"},
-            { "trigger": "setVehicleRotation","contents":"setVehicleRotation(${1:vehicleid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})"},
-            { "trigger": "getVehicleRotation","contents":"getVehicleRotation(${1:vehcileid})"},
-            { "trigger": "setVehicleSpeed","contents":"setVehicleSpeed(${1:vehicleid}, ${2:Float:speedX}, ${3:Float:speedY}, ${4:Float:speedZ})"},
-            { "trigger": "getVehicleSpeed","contents":"getVehicleSpeed(${1:vehicleId})"},
-            { "trigger": "setVehicleFuel","contents":"setVehicleFuel(${1:vehicleid}, ${2:Float:amount})"},
-            { "trigger": "getVehicleFuel","contents":"getVehicleFuel(${1:vehicleid})"},
-            { "trigger": "setVehicleEngineState","contents":"setVehicleEngineState(${1:vehicleid}, ${2:bool state = false})"},
-            { "trigger": "getVehicleEngineState","contents":"getVehicleEngineState(${1:vehicleid},${2: bool state = false})"},
-            { "trigger": "SetVehicleRespawnTime","contents":"SetVehicleRespawnTime(${1:Unknow})"},
-            { "trigger": "getVehicleRespawnTime","contents":"getVehicleRespawnTime(${1:vehicleId})"},
-            { "trigger": "respawnVehicle","contents":"respawnVehicle(${1:vehicleid})"},
-            { "trigger": "repairVehicle","contents":"repairVehicle(${1:vehicleid})"},
-            { "trigger": "explodeVehicle","contents":"explodeVehicle(${1:vehicleid})"},
-        //Vehicle Functions - Appearance 
-            { "trigger": "setVehicleColour","contents":"setVehicleColour(${1:vehicleid}, ${2:r}, ${3:g}, ${4:b}, ${5:r}, ${6:g}, ${7:b})"},
-            { "trigger": "getVehicleColour","contents":"getVehicleColour(${1:vehicleid})"},
-            { "trigger": "setVehiclePlateText","contents":"setVehiclePlateText(${1:vehicleid}, ${2:string text[]})"},
-            { "trigger": "getVehiclePlateText","contents":"getVehiclePlateText(${1:vehicleid})"},
-            { "trigger": "setVehicleDirtLevel","contents":"setVehicleDirtLevel(${1:vehicleid}, ${2:Float:level})"},
-            { "trigger": "getVehicleDirtLevel","contents":"getVehicleDirtLevel(${1:vehicleid})"},
-            { "trigger": "setVehiclePartOpen","contents":"setVehiclePartOpen(${1:vehicleid}, ${2:partid}, ${3:bool state = false})"},
-            { "trigger": "isVehiclePartOpen","contents":"isVehiclePartOpen(${1:vehicleid}, ${2:partid})"},
-            { "trigger": "setVehicleWindowOpen","contents":"setVehicleWindowOpen(${1:vehicleid}, ${2:seatid}, ${3:bool state = false})"},
-            { "trigger": "isVehicleWindowOpen","contents":"isVehicleWindowOpen(${1:vehicleid}, ${2:seatid})"},
-            { "trigger": "setVehicleTuningTable","contents":"setVehicleTuningTable(${1:vehicleid}, ${2:tableid})"},
-            { "trigger": "getVehicleTuningTable","contents":"getVehicleTuningTable(${1:vehicleid})"},
-            { "trigger": "setVehicleWheelTexture","contents":"setVehicleWheelTexture(${1:vehicleid}, ${2:wheelid}, ${3:textureid})"},
-            { "trigger": "getVehicleWheelTexture","contents":"getVehicleWheelTexture(${1:vehicleid}, ${2:wheelid})"},
-            { "trigger": "getVehicleModel","contents":"getVehicleModel(${1:vehicleid})"},
-        // Signals
-            { "trigger": "setVehicleSirenState","contents":"setVehicleSirenState(${1:vehicleid}, ${2:bool state = false})"},
-            { "trigger": "getVehicleSirenState","contents":"getVehicleSirenState(${1:vehicleid})"},
-            { "trigger": "setVehicleBeaconLightState","contents":"setVehicleBeaconLightState(${1:vehicleid}, ${1:bool state = false)"},
-            { "trigger": "getVehicleBeaconLightState","contents":"getVehicleBeaconLightState(${1:vehicleid})"},
-            { "trigger": "setVehicleHornState","contents":"setVehicleHornState(${1:vehicleid}, ${1:bool state = false})"},
-            { "trigger": "getVehicleHornState","contents":"getVehicleHornState(${1:vehicleid})"},
-        // Lights
-            { "trigger": "getVehicleLightState","contents":"getVehicleLightState(${1:vehicleid})"},
-            { "trigger": "setVehicleLightState","contents":"setVehicleLightState(${1:vehicleid}, ${2:bool lightState = false})"},
-            { "trigger": "getIndicatorLightState","contents":"getIndicatorLightState(${1:vehicleid}, ${2:indicatorSide})"},
-            { "trigger": "setIndicatorLightState","contents":"setIndicatorLightState(${1:vehicleid}, ${2:indicatorSide}, ${3:bool lightState = false})"},
-            { "trigger": "getTaxiLightState","contents":"getTaxiLightState(${1:vehicleid})"},
-            { "trigger": "setTaxiLightState","contents":"setTaxiLightState(${1:vehicleid}, ${2:bool lightState = false})"}
+    /*Server Functions*/
+        /*Event Functions*/
+        { "trigger": "triggerClientEvent","contents":"triggerClientEvent(${1:playerid}, ${2:string event[]}, ${3:...})"},
+        /*"Server Functions"*/
+        { "trigger": "shutdown","contents":"shutdown()"},
+        { "trigger": "setGameModeText","contents":"setGameModeText(${1:string[]})"},
+        /*"Control Functions"*/
+        { "trigger": "kickPlayer","contents":"kick(${1:playerid})"},
+        { "trigger": "banPlayer","contents":"banPlayer(${1:playerid})"},
+        { "trigger": "unBanSerial","contents":"unbanSerial(${1:string serial[]})"},
+        { "trigger": "isSerialBanned","contents":"isSerialBanned(${1:string serial[]})"},
+        { "trigger": "banSerial","contents":"banSerial(${1:string serial[]}, ${2:bannerid}, ${3:seconds}, ${4:string reason[]})"},
+        /*Game Functions*/
+        { "trigger": "setSummer","contents":"setSummer(${1:bool trigger = false})"},
+        /*"Player Functions*/
+        { "trigger": "respawnPlayer","contents":"respawnPlayer(${1:playerid})"},
+        { "trigger": "getPlayerSerial","contents":"getPlayerSerial(${1:playerid})"},
+        { "trigger": "getPlayerNetworkStats","contents":"getPlayerNetworkStats(${1:playerid})"},
+        { "trigger": "removePlayerFromVehicle","contents":"removePlayerFromVehicle(${1:playerid})"},
+        { "trigger": "setPlayerHealth","contents":"setPlayerHealth(${1:playeridn, ${2:Float:health})"},
+        { "trigger": "setPlayerModel","contents":"setPlayerModel(${1:playerid}, ${2:string model[]})"},
+        { "trigger": "sendPlayerMessageToAll","contents":"sendPlayerMessageToAll(${1:string message[]})"},
+        { "trigger": "togglePlayerHud","contents":"togglePlayerHud(${1:playerid}, ${2:bool hud = false})"},
+        { "trigger": "givePlayerWeapon","contents":"givePlayerWeapon(${1:playerid}, ${2:weaponid}, ${3:ammo})"},
+        { "trigger": "setPlayerHandModel","contents":"setPlayerHandModel(${1:playerid}, ${2:hand}, ${3:model})"},
+        { "trigger": "sendPlayerMessage","contents":"sendPlayerMessage(${1:playerid}, ${2:string message[]})"},
+        { "trigger": "removePlayerWeapon","contents":"removePlayerWeapon(${1:playerid}, ${2:weaponid}, ${3:ammo})"},
+        { "trigger": "putPlayerInVehicle","contents":"putPlayerInVehicle(${1:playerid}, ${2:vehicleid}, ${3:seat})"},
+        { "trigger": "setPlayerPosition","contents":"setPlayerPosition(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})"},
+        { "trigger": "setPlayerRotation","contents":"setPlayerRotation(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})"},
+        { "trigger": "setPlayerAnimStyle","contents":"setPlayerAnimStyle(${1:playerid}, ${2:string directory[]}, ${3:string animStyle[]})"},
+        /*HTTP Functions*/
+        { "trigger": "webRequest","contents":"webRequest(${1:type}, ${2:string url[]}, ${3:string post[]}, ${4:function callback}, ${5:port = 80})"},
     ]   
 }
