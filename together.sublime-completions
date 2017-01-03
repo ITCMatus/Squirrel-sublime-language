@@ -1,0 +1,64 @@
+{
+    "scope": "source.nut",
+    "completions": [
+      /*Together Functions*/
+            /*Script Functions*/
+            { "trigger": "date", "contents": "date()" },
+            { "trigger": "log", "contents": "log(${1:string[]})" },
+            { "trigger": "getPlayers", "contents": "getPlayers()" },
+            { "trigger": "getVehicles", "contents": "getVehicles()" },
+            { "trigger": "getTickCount", "contents": "getTickCount()" },
+            { "trigger": "getMaxPlayers", "contents": "getMaxPlayers()" },
+            { "trigger": "getServerName", "contents": "getServerName()" },
+            { "trigger": "getPlayerCount", "contents": "getPlayerCount()" },
+            /*Event Functions*/
+            { "trigger": "callEvent","contents":"callEvent(${1:string event[]}, ${2:...})"}, 
+            { "trigger": "addEventHandler","contents":"addEventHandler(${1:string event[]}, ${2:function})"},
+            { "trigger": "removeEventHandler","contents":"removeEventHandler(${1:string event[]}, ${2:function})"},
+            /*Area Functions*/
+            { "trigger": "getDistanceBetweenPoints2D","contents":"getDistanceBetweenPoints2D(${1:Float:X}, ${1:Float:Y}, ${1:Float:X_1}, ${1:Float:Y_1})"},
+            { "trigger": "isPointInCircle2D","contents":"isPointInCircle2D(${1:Float:PointX}, ${2:Float:PointY}, ${3:Float:CircleX}, ${4:Float:CircleY}, ${5:Float:Radius})"},
+            { "trigger": "isPointInArea2D","contents":"isPointInArea2D(${1:Float:PointX}, ${2:Float:PointY}, ${3:Float:AreaX}, ${4:Float:AreaY}, ${5:Float:AreaX2}, ${6:Float:AreaY2})"},
+            { "trigger": "getDistanceBetweenPoints3D","contents":"getDistanceBetweenPoints3D(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:X_1}, ${5:Float:Y_2}, ${6:Float:Z_3})"},
+            { "trigger": "isPointInCircle3D","contents":"isPointInCircle3D(${1:Float:PointX}, ${2:Float:PointY}, ${3:Float:PointZ}, ${4:Float:CircleX}, ${5:Float:CircleY}, ${6:Float:CircleZ}, ${7:Float:Radius})"},
+            { "trigger": "isPointInTube","contents":"isPointInTube(${1:Float:PointX}, ${2:Float:PointY}, ${3:Float:PointZ}, ${4:Float:TubeX}, ${5:Float:TubeY}, ${6:Float:TubeZ}, ${7:Float:Heigh}, ${8:Float:Radius})"}, 
+            { "trigger": "isPointInArea3D","contents":"isPointInArea3D(${1:Float:PointX}, ${2:Float:PointY}, ${3:Float:PointZ}, ${4:Float:AreaX}, ${5:Float:AreaY}, ${6:Float:AreaZ}, ${7:Float:AreaX2}, ${8:Float:AreaY2}, ${9:Float:AreaZ2})"},
+            /*Game Functions*/
+            { "trigger": "setWeather","contents":"setWeather(${1:string name[]})"},
+            /*"Player Functions*/
+            { "trigger": "isPlayerDead","contents":"isPlayerDead(${1:playerid})"}, 
+            { "trigger": "getPlayerPing","contents":"getPlayerPing(${1:playerid})"}, 
+            { "trigger": "getPlayerName","contents":"getPlayerName(${1:playerid})"}, 
+            { "trigger": "getPlayerModel","contents":"getPlayerModel(${1:playerid})"},  
+            { "trigger": "isPlayerSpawned","contents":"isPlayerSpawned(${1:playerid})"}, 
+            { "trigger": "getPlayerHealth","contents":"getPlayerHealth(${1:playerid})"},  
+            { "trigger": "getPlayerWeapon","contents":"getPlayerWeapon(${1:playerid})"},  
+            { "trigger": "getPlayerVehicle","contents":"getPlayerVehicle(${1:playerid})"},  
+            { "trigger": "isPlayerConnected","contents":"isPlayerConnected(${1:playerid})"},  
+            { "trigger": "isPlayerInVehicle","contents":"isPlayerInVehicle(${1:playerid})"},  
+            { "trigger": "getPlayerPosition","contents":"getPlayerPosition(${1:playerid})"},  
+            { "trigger": "togglePlayerControls","contents":"togglePlayerControls(${1:playerid}, ${2:bool toggle = false})"},
+            /*Blip Functions*/
+            { "trigger": "destroyBlip","contents":"destroyBlip(${1:blipid})"},
+            { "trigger": "attachBlipToPed","contents":"attachBlipToPed(${1:blipid}, ${2:pedid})"},
+            { "trigger": "attachBlipToPlayer","contents":"attachBlipToPlayer(${1:blipid}, ${2:playerid})"},
+            { "trigger": "attachBlipToVehicle","contents":"attachBlipToVehicle(${1:blipid}, ${2:vehicleid})"},
+            { "trigger": "createBlip","contents":"createBlip(${1:Float:x}, ${2:Float:y}, ${3:library}, ${4:icon})"},
+            /*Timer Functions*/
+            { "trigger": "timer::Kill","contents":"timer::Kill()"}, 
+            { "trigger": "timer::IsActive","contents":"timer::IsActive()"}, 
+            { "trigger": "timer","contents":"timer(${1:function}, ${2:interval}, ${3:repeat}, ${4:...})"}, 
+            /*SQL Functions*/
+            { "trigger": "sqlite","contents":"sqlite(${1:string file[]})"}, 
+            { "trigger": "sqlite::close","contents":"${1:sqlite::}.close()"},
+            { "trigger": "sqlite::query","contents":"${1:sqlite::}.query(${2:string stmt[]})"}, 
+            { "trigger": "sqlite::last_insert_id","contents":"${1:sqlite::}.last_insert_id()"}, 
+            /*Util Functions*/
+            { "trigger": "toRGBA","contents":"toRGBA(${1:colour})"}, 
+            { "trigger": "fromRGB","contents":"fromRGB(${1:r}, ${2:g}, ${3:b}, ${4:a = 255})"}, 
+            { "trigger": "getWeaponNameFromId","contents":"getWeaponNameFromId(${1:weaponID})"}, 
+            { "trigger": "getPlayerIdFromName","contents":"getPlayerIdFromName(${1:string name[]})"}, 
+            { "trigger": "getWeaponIdFromName","contents":"getWeaponIdFromName(${1:string name[]})"}, 
+            { "trigger": "clamp","contents":"clamp(${1:Float:minimum}, ${2:Float:value}, ${3:Float:maximum})"}
+    ]   
+}

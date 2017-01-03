@@ -1,0 +1,70 @@
+{
+    "scope": "source.nut",
+    "completions": [
+      /*Client Functions*/
+            /*Event Functions*/
+            { "trigger": "triggerServerEvent","contents":"triggerServerEvent(${1:string event[]}, ${2:...})"},
+            /*Command Functions*/
+            { "trigger": "addCommandHandler","contents":"addCommandHandler(${1:string command[]}, ${2:function})"},
+            /*"Game Functions*/
+            { "trigger": "openMap","contents":"openMap()"},
+            { "trigger": "isMapOpen","contents":"isMapOpen()"},
+            { "trigger": "startHudTimer","contents":"startHudTimer()"},
+            { "trigger": "takeScreenshot","contents":"takeScreenshot()"},
+            { "trigger": "destroyHudTimer","contents":"destroyHudTimer()"},
+            { "trigger": "removeGPSTarget","contents":"removeGPSTarget()"},
+            { "trigger": "isHudTimerRunning","contents":"isHudTimerRunning()"},
+            { "trigger": "stopHudTimer","contents":"stopHudTimer(${1:vehicleid})"},
+            { "trigger": "toggleHud","contents":"toggleHud(${1:bool toggle = false})"},
+            { "trigger": "getHudTimerRemainingTime","contents":"getHudTimerRemainingTime()"},
+            { "trigger": "setGPSTarget","contents":"setGPSTarget(${1:Float:fX}, ${2:Float:fY})"},
+            { "trigger": "fadeScreen","contents":"fadeScreen(${1:Float:time}, {${2:bool fadein = true})"},
+            { "trigger": "setHudTimerRemainingTime","contents":"setHudTimerRemainingTime(${1:Float:time})"},
+            { "trigger": "createHudTimer","contents":"createHudTimer(${1:Float:time, ${2:bool show = true}, ${3:bool start = true})"},
+            /*Key Functions*/
+            { "trigger": "unbindKey","contents":"unbindKey(${1:string key[]}, ${2:string state[]})"},
+            { "trigger": "bindKey","contents":"bindKey(${1:string key[]}, ${2:string state[]}, ${3:function callback})"},
+            /*"Player Functions*/
+            { "trigger": "getLocalPlayer","contents":"getLocalPlayer()"},
+            { "trigger": "getPlayerDrunkLevel","contents":"getPlayerDrunkLevel()"},
+            { "trigger": "getPlayerWantedLevel","contents":"getPlayerWantedLevel()"},
+            { "trigger": "resetPlayerDrunkLevel","contents":"resetPlayerDrunkLevel()"},
+            { "trigger": "getPlayerColour","contents":"getPlayerColour(${1:playerid})"},
+            { "trigger": "isPlayerOnScreen","contents":"isPlayerOnScreen(${1:playerid})"},
+            { "trigger": "setPlayerDrunkLevel","contents":"setPlayerDrunkLevel(${1:level})"},
+            { "trigger": "getPlayerMoveState","contents":"getPlayerMoveState(${1:playerid})"},
+            { "trigger": "setPlayerWantedLevel","contents":"setPlayerWantedLevel(${1:level}, ${2:size})"},
+            /*Camera Functions*/
+            { "trigger": "getCameraRotation","contents":"getCameraRotation()"},
+            { "trigger": "getCameraPosition","contents":"getCameraPosition(${1:pedid})"},
+            { "trigger": "SetCameraPosition","contents":"SetCameraPosition(${1:Unknow})"},
+            { "trigger": "SetCameraRotation","contents":"SetCameraRotation(${1:Unknow})"},
+            { "trigger": "simpleShake","contents":"simpleShake(${1:speed}, ${2:Float:strength}, ${3:Float:duration})"},
+            /*3DTextLabel Functions*/
+            { "trigger": "count3DTextLabels","contents":"count3DTextLabels()"},
+            { "trigger": "remove3DTextLabel","contents":"remove3DTextLabel(${1:textid})"},
+            { "trigger": "set3DTextLabelColor","contents":"set3DTextLabelColor(${1:textid}, ${2:color})"},
+            { "trigger": "set3DTextLabelText","contents":"set3DTextLabelText(${1:textid}, ${2:string text[]})"},
+            { "trigger": "set3DTextLabelActive","contents":"set3DTextLabelActive(${1:textid}, ${1:bool active = false})"},
+            { "trigger": "set3DTextLabelDrawDistance","contents":"set3DTextLabelDrawDistance(${1:textid}, ${2:Float:distance})"},
+            { "trigger": "set3DTextLabelPosition","contents":"set3DTextLabelPosition(${1:textid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})"},
+            { "trigger": "create3DTextLabel","contents":"create3DTextLabel(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:string text[]}, ${5:color}, ${6:Float:distance})"},
+            /*Audio Functions*/
+            { "trigger": "audio::play","contents":"${1:audio::}.play()"},
+            { "trigger": "audio::stop","contents":"${1:audio::}.stop()"},
+            { "trigger": "audio::pause","contents":"${1:audio::}.pause()"},
+            { "trigger": "audio::setVolume","contents":"${1:audio::}.setVolume()"},
+            { "trigger": "audio::getVolume","contents":"${1:audio::}.getVolume()"},
+            { "trigger": "audio::resetVolume","contents":"${1:audio::}.resetVolume()"},
+            { "trigger": "audio::deleteSound","contents":"${1:audio::}.deleteSound()"},
+            { "trigger": "audio","contents":"audio(${1:bool onlineStream = true}, ${2:bool replay = false}, ${3:string stream})"},
+            /*Ped Functions*/
+            { "trigger": "getPedName","contents":"getPedName(${1:pedid})"},
+            { "trigger": "destroyPed","contents":"destroyPed(${1:pedid})"},
+            { "trigger": "getPedPosition","contents":"getPedPosition(${1:pedid})"},
+            { "trigger": "setPedModel","contents":"setPedModel(${1:pedid}, ${2:model})"},
+            { "trigger": "setPedName","contents":"setPedName(${1:pedid}, ${2:string name[]})"},
+            { "trigger": "showPedName","contents":"showPedName(${1:pedid}, ${2:bool show = false})"},
+            { "trigger": "createPed","contents":"createPed(${1:model}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz})"}
+    ]   
+}
