@@ -1,0 +1,27 @@
+{
+    "scope": "source.nut",
+    "completions": [
+    /*Server Events*/
+        /*Server Events*/
+        { "trigger": "onScriptInit", "contents": "onScriptInit()" },
+        { "trigger": "onScriptExit", "contents": "onScriptExit()" },
+        { "trigger": "onServerPulse", "contents": "onServerPulse()" },
+        { "trigger": "onServerShutdown", "contents": "onServerShutdown()" },
+        { "trigger": "onConsoleInput", "contents": "onConsoleInput(${1:string command[]}, ${2:string param[]})" },
+        { "trigger": "onScriptError", "contents": "onScriptError(${1:type}, ${2:line}, ${3:column}, ${4:string error[]})" },
+        /*Player Events*/
+        { "trigger": "onPlayerSpawn", "contents": "onPlayerSpawn(${1:playerid})" },
+        { "trigger": "onPlayerDeath", "contents": "onPlayerDeath(${1:playerid}, ${2:killeridh})" },
+        { "trigger": "onPlayerChat", "contents": "onPlayerChat(${1:playerid}, ${2:string text[]})" },
+        { "trigger": "onPlayerDisconnect", "contents": "onPlayerDisconnect(${1:playerid}, ${2:string reason[]})" },
+        { "trigger": "onPlayerVehicleExit", "contents": "onPlayerVehicleExit(${1:playerid}, ${2:vehicleid}, ${3:seat})" },
+        { "trigger": "onPlayerVehicleEnter", "contents": "onPlayerVehicleEnter(${1:playerid}, ${2:vehicleid}, ${3:seat})" },
+        { "trigger": "onPlayerChangeWeapon", "contents": "onPlayerChangeWeapon(${1:playerid}, ${2:new_weapon}, ${3:oldweapon})" },
+        { "trigger": "onPlayerConnectionRejected", "contents": "onPlayerConnectionRejected(${1:playerid}, ${2:string reason[]})" },
+        { "trigger": "onPlayerChangeHealth", "contents": "onPlayerChangeHealth(${1:playerid}, ${2:Float:new_health}, ${3:Float:old_health})" },
+        { "trigger": "onPlayerConnect", "contents": "onPlayerConnect(${1:playerid}, ${2:string name[], ${3:string ip[]}, ${4:string serial[]})" },
+        { "trigger": "onPlayerChangeNick", "contents": "onPlayerChangeNick(${1:playerid}, ${2:string newNickname[]}, ${3:string oldNickname[]})" },
+        /*Vehicle Events*/
+        { "trigger": "onVehicleSpawn", "contents": "onVehicleSpawn(${1:vehicleid})" }
+    ]   
+}

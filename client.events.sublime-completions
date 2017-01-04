@@ -1,0 +1,38 @@
+{
+    "scope": "source.nut",
+    "completions": [
+    /*Client Events*/
+        /*Script Events*/
+        { "trigger": "onClientScriptInit", "contents": "onClientScriptInit()" },
+        { "trigger": "onClientScriptExit", "contents": "onClientScriptExit()" },
+        /*Misc Events*/
+        { "trigger": "onClientProcess", "contents": "onClientProcess()" },
+        { "trigger": "onClientOpenMap", "contents": "onClientOpenMap()" },
+        { "trigger": "onClientCloseMap", "contents": "onClientCloseMap()" },
+        { "trigger": "onClientFrameRender", "contents": "onClientFrameRender()" },
+        { "trigger": "onClientDeviceReset", "contents": "onClientDeviceReset()" },
+ 		{ "trigger": "onClientFramePreRender", "contents": "onClientFramePreRender()" },
+        { "trigger": "onClientFocusChange", "contents": "onClientFocusChange(${1:bool lost = false})" },
+        { "trigger": "onClientChat", "contents": "onClientChat(${1:string text[]}, ${2:bool isCommand})" },
+        { "trigger": "onClientScreenshot", "contents": "onClientScreenshot(${1:string name[]}, ${2:string path})" },
+        { "trigger": "onClientChangeNick", "contents": "onClientChangeNick(${1:string new_Nickname[]}, ${2:string oldNickname[]})" },
+        /*Player Events*/
+        { "trigger": "onClientPlayerDeath", "contents": "onClientPlayerDeath(${1:playerid})" },
+        { "trigger": "onClientPlayerDisconnect", "contents": "onClientPlayerDisconnect(${1:playerid})" },
+        { "trigger": "onClientPlayerConnect", "contents": "onClientPlayerConnect(${1:playerid}, ${2:string nickname[]})" },
+        { "trigger": "onClientPlayerMoveStateChange", "contents": "onClientPlayerMoveStateChange(${1:playerid}, ${2:oldMoveState}, ${3:new_MoveState})" },
+        /*Game Events*/
+        { "trigger": "onHudTimerComplete", "contents": "onHudTimerComplete()" },
+        /*GUI Events*/
+        { "trigger": "onGuiElementMove", "contents": "onGuiElementMove(${1:instance element})" },
+        { "trigger": "onGuiElementClick", "contents": "onGuiElementClick(${1:instance element})" },
+        { "trigger": "onGuiElementResize", "contents": "onGuiElementResize(${1:instance element})" },
+        { "trigger": "onGuiElementTabChange", "contents": "onGuiElementTabChange(${1:instance element})" },
+        { "trigger": "onGuiElementMouseEnter", "contents": "onGuiElementMouseEnter(${1:instance element})" },
+        { "trigger": "onGuiElementMouseLeave", "contents": "onGuiElementMouseLeave(${1:instance element})" },
+        { "trigger": "onGuiElementTextChange", "contents": "onGuiElementTextChange(${1:instance element})" },
+        { "trigger": "onGuiElementTextAccept", "contents": "onGuiElementTextAccept(${1:instance element})" },
+        { "trigger": "onGuiElementSortColumn", "contents": "onGuiElementSortColumn(${1:instance element})" },
+        { "trigger": "onGuiElementSelectionChange", "contents": "onGuiElementSelectionChange(${1:instance element})" }
+    ]   
+}
