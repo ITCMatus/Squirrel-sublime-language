@@ -2,6 +2,10 @@
     "scope": "source.nut",
     "completions": [
     /*Together Functions*/
+        /*Functions*/
+        { "trigger": "foreach", "contents": "foreach(idx, value in var)\n{\n\n}" },
+        { "trigger": "for", "contents": "for(local i = 0; i < var.len(); i++)\n{\n\n}" },
+        { "trigger": "switch", "contents": "switch(variable)\n{\n\tcase number:\n\t\tbreak;\n\tdefault:\n}" },
         /*Script Functions*/
         { "trigger": "date", "contents": "date()" },
         { "trigger": "log", "contents": "log(${1:string[]})" },

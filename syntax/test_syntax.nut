@@ -1,20 +1,22 @@
-local script = "Empire Bay Death Match";
+local 
+    script = "Empire Bay Death Match";
 
-addEventHandler( "onScriptInit", scriptInit );
 function scriptInit()
 {
-    log( script + " Loaded!" );
-    setGameModeText( "EB-DM" );
-    setMapName( "Empire Bay" );
+    log              (script + " Loaded!");
+    setMapName       ("Empire Bay");
+    setWeather       ("DT03part03MariaAgnelo");
+    setGameModeText  ("EB-DM");
+    
+    sqlite(string file[])       
     setSummer(false);
-    setWeather("DT03part03MariaAgnelo");
 
-    // Create cars surrounding the spawn bar.
-    createVehicle(1, -1567.36, -193.678, -20.1856, -92.0489, 0.223556, 3.04026);
-    createVehicle(8, -1546.6, -156.406, -19.2969, -0.241408, 2.89541, -2.29698);
-    createVehicle(9, -1537.77, -168.93, -19.4142, 0.0217354, 0.396637, -2.80105);
-    createVehicle(10, -1546.66, -181.15, -20.1519, 179.887, 3.31208, -0.653084);
+    createVehicle(1,  -1567.36, -193.678, -20.1856, -92.0489,   0.223556,  3.04026);
+    createVehicle(8,  -1546.6,  -156.406, -19.2969, -0.241408,  2.89541,  -2.29698);
+    createVehicle(9,  -1537.77, -168.93,  -19.4142,  0.0217354, 0.396637, -2.80105);
+    createVehicle(10, -1546.66, -181.15,  -20.1519,  179.887,   3.31208,  -0.653084);
 } 
+addEventHandler( "onScriptInit", scriptInit );
 
 function playerConnect( playerid, name, ip, serial )
 {
@@ -30,8 +32,8 @@ addEventHandler( "onPlayerDisconnect", playerDisconnect );
 
 function playerSpawn( playerid )
 {
-    setPlayerPosition( playerid, -1551.560181, -169.915466, -19.672523 );
-    setPlayerHealth( playerid, 720.0 );
+    setPlayerHealth   (playerid, 720.0);
+    setPlayerPosition (playerid, -1551.560181, -169.915466, -19.672523);
 
     sendPlayerMessage(playerid, "Welcome to Mafia2-Online Official Test Server!", 150, 150, 230);
     sendPlayerMessage(playerid, "You can test there some of the features :p", 150, 150, 230);
@@ -41,10 +43,6 @@ function playerSpawn( playerid )
 }
 addEventHandler( "onPlayerSpawn", playerSpawn );
 
-/**
- * Demo of server-client-server event binding
- * and triggering
- */
 addEventHandler( "eventConfirm",
     function( playerid )
     {
@@ -96,7 +94,6 @@ addCommandHandler("help", function(playerid) {
         }
     }
 });
-
 addCommandHandler("paint", function(playerid, r, g, b) {
     if (isPlayerInVehicle(playerid)) {
         local vehicle = getPlayerVehicle(playerid);
@@ -240,7 +237,10 @@ addCommandHandler("savepos", function(playerid, ...) {
             return a + " " + b;
         }));
     }
-
+    foreach(idx, value in var)
+    {
+    
+    }
     // iterate over px,y,z]
     foreach (idx, value in pos) {
 
