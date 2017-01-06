@@ -167,10 +167,33 @@
             <key>name</key>
             <string>keyword.operator.squirrel</string>
         </dict>
-
         <dict>
             <key>match</key>
-            <string>\b(if|local|Float:|while|do|switch|for|foreach|return|throw|yield|continue|try|catch|resume|default|else|case|break)\b</string>
+            <string>\b(addCommandHandler)\b</string>
+            <key>name</key>
+            <string>keyword.control.squirrel</string>
+        </dict>  
+        <dict>
+            <key>match</key>
+            <string>\b(addEventHandler)\b</string>
+            <key>name</key>
+            <string>storage.type.squirrel</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>\b(local)\b</string>
+            <key>name</key>
+            <string>variable.parameter</string>
+        </dict>
+        <dict>
+            <key>parents</key>
+            <string>(?:[A-Za-z_]\w*+|::[^:])++</string>
+            <key>name</key>
+            <string>storage.type.squirrel</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>\b(if|Float:|while|do|switch|for|foreach|return|throw|yield|continue|try|catch|resume|default|else|case|break)\b</string>
             <key>name</key>
             <string>keyword.control.squirrel</string>
         </dict>        
@@ -180,12 +203,17 @@
                 <key>1</key>
                 <dict>
                     <key>name</key>
-                    <string>keyword.control.squirrel</string>
+                    <string>storage.type.squirrel</string>
                 </dict>
                 <key>2</key>
                 <dict>
                     <key>name</key>
                     <string>entity.name.function</string>
+                </dict>
+                <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>variable.parameter</string>
                 </dict>
             </dict>
             <key>match</key>

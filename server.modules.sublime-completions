@@ -1,0 +1,18 @@
+{
+    "scope": "source.nut",
+    "completions": [
+    /*Server Modules*/
+        /*MySQL*/
+        { "trigger": "mysql_ping", "contents": "mysql_ping(${1:mysql_handler handler})" },
+        { "trigger": "mysql_error", "contents": "mysql_error(${1:mysql_handler handler})" },
+        { "trigger": "mysql_errno", "contents": "mysql_errno(${1:mysql_handler handler})" },
+        { "trigger": "mysql_connect", "contents": "mysql_connect(${1:mysql_handler handler})" },
+        { "trigger": "mysql_insert_id", "contents": "mysql_insert_id(${1:mysql_handler handler})" },
+        { "trigger": "mysql_free_result", "contents": "mysql_free_result(${1:mysql_result result})" },
+        { "trigger": "mysql_fetch_assoc", "contents": "mysql_fetch_assoc(${1:mysql_result result})" },
+        { "trigger": "mysql_affected_rows", "contents": "mysql_affected_rows(${1:mysql_handler handler})" },
+        { "trigger": "mysql_query", "contents": "mysql_query(${1:mysql_handler handler}, ${2:string query[]})" },
+        { "trigger": "mysql_escape_string", "contents": "mysql_escape_string(${1:mysql_handler handler}, ${2:string text[]})" },
+        { "trigger": "mysql_connect", "contents": "mysql_connect(${1:string hostname[]}, ${2:string username[]}, ${3:string password[]}, ${4:string database[]})" }
+    ]   
+}
